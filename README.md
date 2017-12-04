@@ -1,7 +1,7 @@
 # FE Dev Tech Test
 
 > Uses Nuxt.js (on top of Vue.js) to pull in Flickr images tagged "potato"
-> Copy the content of `dist` folder to your local sever to view
+Copy the content of `dist` folder to your local sever to view
 
 ## Build Setup
 
