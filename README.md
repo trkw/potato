@@ -1,6 +1,7 @@
 # FE Dev Tech Test
 
 > Uses Nuxt.js (on top of Vue.js) to pull in Flickr images tagged "potato"
+> Copy the content of `dist` folder to your local sever to view
 
 ## Build Setup
 
@@ -18,5 +19,3 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
