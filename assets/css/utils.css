@@ -15,7 +15,8 @@ img{
 }
 ul{
   margin: 0;
-  & .inline{
+  &.inline{
+    word-break: break-all;
     & li{
       display: inline;
     }

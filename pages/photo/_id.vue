@@ -8,6 +8,12 @@
     <div class="sm-col-12 md-col-4">
       <div class="thumbnail mr2">
         <img :src="photo.media.m " alt="">
+      <div v-if="tags.length" class="tags clear">
+        Tags: <ul class="inline">
+          <li v-for="tag in tags" :key="tag" class="pr1">
+            <a :href="`https://www.flickr.com/photos/tags/${tag}`" target="_blank">{{ tag }}</a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="sm-col-12 md-col-8" v-html="description"></div>
@@ -35,6 +41,9 @@ export default {
     description () {
       const regex = /(?:.*?<\/p> ){2}(.*)/
       return this.photo.description.match(regex)[1]
+    },
+    tags () {
+      return this.photo.tags.split(' ')
     }
   }
 }
