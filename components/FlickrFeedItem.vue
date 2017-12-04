@@ -20,10 +20,10 @@
 </template>
 
 <script>
-import { dateHelpers } from '~/assets/js/mixins.js'
+import { dateHelpers, authorHelpers } from '~/assets/js/mixins.js'
 
 export default {
-  mixins: [dateHelpers],
+  mixins: [dateHelpers, authorHelpers],
 
   props: {
     photo: {
@@ -45,13 +45,6 @@ export default {
   methods: {
     loadDetails () {
       this.isLoading = true
-    }
-  },
-
-  computed: {
-    username () {
-      const regex = /(?:"[^"]*"|^[^"]*$)/
-      return this.photo.author.match(regex)[0]
     }
   }
 }

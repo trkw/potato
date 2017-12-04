@@ -7,3 +7,12 @@ export const dateHelpers = {
     }
   }
 }
+
+export const authorHelpers = {
+  computed: {
+    username () {
+      const regex = /(?:"[^"]*"|^[^"]*$)/
+      return this.photo.author.match(regex)[0]
+    }
+  }
+}
