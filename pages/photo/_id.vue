@@ -2,8 +2,8 @@
   <div class="inner container">
     <h2 class="pull-left"><a :href="photo.link" target="_blank">{{ photo.title }}</a></h2>
     <button class="btn pull-right" @click="$router.go(-1)">Back</button>
-    <div class="photo-info container clear mb2">
-      {{ photo.author_id }} {{ formattedDate }}
+    <div class="photo-info container clear p1 mb2">
+      <a :href="`http://flickr.com/photos/${photo.author_id}`" class="photo-author mr2 mb1" target="_blank">{{ username }}</a>| {{ formattedDate }}
     </div>
     <div class="sm-col-12 md-col-4">
       <div class="thumbnail mr2">
@@ -21,10 +21,10 @@
 </template>
 
 <script>
-import { dateHelpers } from '~/assets/js/mixins.js'
+import { dateHelpers, authorHelpers } from '~/assets/js/mixins.js'
 
 export default {
-  mixins: [dateHelpers],
+  mixins: [dateHelpers, authorHelpers],
 
   async asyncData ({ store, params, app }) {
     const photo = store.state.photos[params.id]
