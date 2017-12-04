@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200|Playfair+Display:900i');
+
+html{
+  font-size:  62%;
+}
+body {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--white);
+  font-weight: var(--font-weight-light);
+  letter-spacing: var(--letter-spacing-body);
+  text-rendering: optimizeLegibility;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+  margin: 0 0 15px;
+  &.small{
+    margin: 0 0 5px;
+  }
+}
+
+a{
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  font-family: var(--font-header);
+  font-weight: var(--font-weight-bold);
+}
+
+h1, .h1 {
+  font-size: 6vw;
+  margin: 0 0 var(--space-3);
+  font-style:italic;
+}
+
+h2, .h2 {
+  font-family: var(--font-subheader);
+  font-weight: var(--font-weight-light);
+  font-size: 2.6rem;
+  margin: 0 0 var(--space-2);
+  text-transform: uppercase;
+}
+
+h3, .h3 {
+  font-size: 2rem;
+  margin: 0 0 var(--space-1);
+}
+
+h4, .h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h5, .h5 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+} 
+
+@media (--mq-xsmall) {
+  h1, .h1 {
+    font-size: 6rem;
+  }
+
+  h2, .h2 {
+    font-size: 2rem;
+  }
+
+  h3, .h3 {
+    font-size: 1.8rem;
+  }
+  h4, .h4 {
+    font-size: 1rem;
+  }
+}

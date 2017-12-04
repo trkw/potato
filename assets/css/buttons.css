@@ -1,0 +1,28 @@
+button,
+[role="button"]{
+  background: var(--color-primary);
+  border-radius: var(--border-radius);
+  color:var(--white);
+  display: inline-block;
+  flex-grow: 0;
+  margin-bottom: 20px;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: none;
+  padding: var(--space-1) var(--space-2);
+  vertical-align: middle;
+  touch-action: manipulation;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-image: none;
+  border: none;
+  white-space: nowrap;
+  z-index: 0;
+  &.btn-sm{
+    border-radius: 20px;
+    padding: 4px var(--space-2);
+    font-size: 1rem;
+  }
+}

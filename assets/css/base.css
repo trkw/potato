@@ -1,0 +1,23 @@
+html,
+body{
+  background: var(--grey3);
+  background: linear-gradient(180deg, rgb(32, 27, 33), rgb(71, 53, 76));
+  margin: 0;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.inner{
+  width:100%;
+  max-width:1140px;
+  margin: 0 auto;
+  clear: both;
+}
+
+header{
+  color: var(--white);
+  padding: 4rem 0;
+  & h1{
+    margin: 0;
+  }
+}
