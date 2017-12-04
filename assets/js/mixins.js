@@ -12,7 +12,7 @@ export const authorHelpers = {
   computed: {
     username () {
       const regex = /(?:"[^"]*"|^[^"]*$)/
-      return this.photo.author.match(regex)[0]
+      return this.photo.author.match(regex)[0].replace(/"/g, '')
     }
   }
 }
