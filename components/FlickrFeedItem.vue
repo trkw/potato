@@ -52,6 +52,8 @@ export default {
 
 <style scoped>
   
+  @custom-media --mq-xsmall (max-width: 800px); 
+
   .feed-item{
     align-items: center;
     flex-wrap: nowrap;
@@ -83,19 +85,19 @@ export default {
 
   @media (--mq-xsmall) {
     .photo-date{
-      order: 2;
+      order: 1;
       width: 100%;
     }
     .photo-author,
     .photo-link{
       flex: 1;
-      flex: 1 0 auto;
+      flex: 0 0 auto;
     }
     .photo-author{
-      order: 3;
+      order: 2;
     }
     .photo-link{
-      order: 4;
+      order: 3;
     }
   }
 </style>
