@@ -5,9 +5,13 @@
     <div class="photo-info container clear p1 mb2">
       <a :href="`http://flickr.com/photos/${photo.author_id}`" class="photo-author mr2 mb1" target="_blank">{{ username }}</a>| {{ formattedDate }}
     </div>
-    <div class="sm-col-12 md-col-4">
-      <div class="thumbnail mr2">
-        <img :src="photo.media.m " alt="">
+    <div class="container">
+      <div class="sm-col-4 md-col-4">
+        <div class="thumbnail mr2">
+          <img :src="photo.media.m " alt="">
+        </div>
+      </div>
+      <div class="sm-col-8 md-col-8" v-html="description"></div>
       <div v-if="tags.length" class="tags clear">
         Tags: <ul class="inline">
           <li v-for="tag in tags" :key="tag" class="pr1">
@@ -16,7 +20,6 @@
         </ul>
       </div>
     </div>
-    <div class="sm-col-12 md-col-8" v-html="description"></div>
   </div>
 </template>
 
@@ -52,5 +55,8 @@ export default {
 <style scoped>
   .thumbnail{
     
+  }
+  .photo-info{
+    background: var(--grey4);
   }
 </style>
