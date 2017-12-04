@@ -1,6 +1,6 @@
-# potato
+# FE Dev Tech Test
 
-> FE Dev Tech Test
+> Uses Nuxt.js (on top of Vue.js) to pull in Flickr images tagged "potato"
 
 ## Build Setup
 
